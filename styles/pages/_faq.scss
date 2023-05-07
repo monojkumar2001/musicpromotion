@@ -1,0 +1,133 @@
+.faq {
+    padding: 150px 0 100px 0;
+    .container {
+        .heading {
+            font-size: clamp(30px, 7vw, 60px);
+            line-height: 1.7;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+            .focus {
+                padding: 0 4px;
+                background: #38c173;
+                color: #fff;
+            }
+        }
+        .body-text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+      .faq-qes-con{
+        width:100%;
+        display:flex;
+        align-items:flex-start;
+        gap:50px;
+        margin-top:50px;
+        .faq-left{
+            width:45%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            .faq-img{
+                width: 400px;
+                .faq-img img{
+                    width:100%;
+                }
+            }
+           
+        }
+        .questions {
+            width:100%;
+            .accordion {
+                transition: all 0.3s ease;
+                overflow: hidden;
+                margin-bottom: 16px;
+                text-align: left;
+                border: 1px solid #dddddd;
+                border-radius: 4px;
+                padding: 0 1rem;
+                background: rgba(29, 185, 84, 0.03);
+                cursor: pointer;
+                .accordion-header {
+                    font-size: clamp(16px, 3vw, 20px);
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 20px;
+                    padding: 0.5rem 0;
+                    .accordion-icon {
+                        transition: all 0.2s ease;
+                        &.active {
+                            transform: rotate(180deg);
+                        }
+                        @media screen and (max-width: 1080px) {
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                }
+                .accordion-body {
+                    transition: 0.3s;
+                }
+            }
+        }
+      }
+    }
+}
+
+.accordion p {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.accordion.active p {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (max-width:1080px) {
+   .faq-qes-con{
+    display:flex;
+    flex-direction: column;
+   }
+   .questions{
+    width:100%;
+   }
+   .faq-left{
+    width:100% !important;
+   }
+  .questions {
+    width:80% !important;
+    margin:auto;
+    }
+}
+@media screen and (max-width:550px) {
+    .faq-qes-con{
+     display:flex;
+     flex-direction: column;
+    }
+    .questions{
+     width:100%;
+    }
+    .faq-left{
+     width:100% !important;
+    }
+    .faq-img{
+        width:300px !important;
+    }
+    .faq-img img{
+        width:100%;
+    }
+   .questions {
+     width:95% !important;
+     margin:auto;
+     }
+ }
