@@ -14,9 +14,10 @@ html {
 
 body {
 	font-family: $primaryFont;
-	color: $primaryTextColor;
+	color: #000;
+	font-weight: 400;
 	overflow-x: hidden;
-    background: #f8faff;
+    background: #ffffff;
 }
 
 a {

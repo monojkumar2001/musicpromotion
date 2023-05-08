@@ -1,5 +1,5 @@
 #faq {
-    padding: 6em 0 0 0;
+    padding: 0 0 100px 0;
     .container {
         width: 980px;
         max-width: 95%;
@@ -9,64 +9,35 @@
             font-weight: 700;
             margin-bottom: 8px;
         }
-        .description {
-            font-size: clamp(16px, 3vw, 22px);
-            font-weight: 500;
-            margin-bottom: 2em;
+        .content{
+            margin-top: 50px;
         }
-        .accordion {
-            transition: all 0.3s ease;
-            overflow: hidden;
-            margin-bottom: 16px;
-            text-align: left;
-            border: 1px solid #dddddd;
-            border-radius: 4px;
-            padding: 0 1rem;
-            background: rgba(29, 185, 84, 0.03);
-            cursor: pointer;
+        .row-title-text {
+            color: #292929;
+            position: relative;
+            margin: 0;
+            display: block;
             width: 100%;
-            .accordion-header {
-                width: 100%;
-                font-size: clamp(14px, 3vw, 20px);
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 20px;
-                padding: 0.5rem 0;
-                .accordion-icon {
-                    transition: all 0.2s ease;
-                    width: 18px;
-                    height: 18px;
-                    &.active {
-                        transform: rotate(180deg);
-                    }
-                    @media screen and (max-width: 1080px) {
-                        height: 18px !important;
-                        width: 18px !important;
-                    }
-                }
-            }
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: start;
         }
-        .faq-btn {
-            padding: 12px 40px;
-            color: $white;
-            font-size: clamp(16px, 3vw, 22px);
-            font-weight: 500;
-            border-radius: 10px;
-            margin-top: 40px;
-            animation: pulse2 3s infinite;
-            // @keyframes pulse2 {
-            //     0% {
-            //         box-shadow: 0 0 0 0 #1db954;
-            //     }
-            //     50% {
-            //         box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
-            //     }
-            //     100% {
-            //         box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
-            //     }
-            // }
+        .faq-row {
+            background: rgba(217, 217, 217, 0.5);
+            margin-bottom: 30px;
+            border-radius: 6px;
+            border-bottom: none;
+            padding: 15px 20px!important;
         }
+        .icon-wrapper{
+             top: 25px !important; 
+            right: 29px !important;
+        }
+        .row-content-text{
+            text-align: start;
+        }
+        
     }
+
 }

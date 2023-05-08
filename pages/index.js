@@ -17,10 +17,40 @@ import ProvideCount from "@components/sections/ProvideCount";
 import WhyUs from "@components/sections/WhyUs";
 import Services from "@components/sections/Services";
 import ChainUpSection from "@components/sections/ChainUpSection";
+import SongFly from "@components/sections/SongFly";
+import Recognized from "@components/sections/Recognized";
+import MarketingAgenchy from "@components/sections/MarketingAgenchy";
+import LinkedinSales from "@components/sections/LinkedinSales";
 
+import Faq from "react-faq-component";
 // Images
 
 const Home = () => {
+  const data = {
+    rows: [
+      {
+        title: "Metaverse development: what is it?",
+        content: `You can design your own virtual world setting to hold conventions, meetings, seminars, concerts, or even to start your own real-world company there.`,
+      },
+      {
+        title: "How much does our metaverse development service cost?",
+        content: `To get a price on your metaverse development project, get in touch with our team. Your specified features, functionalities, and other factors will affect the price. `,
+      },
+      {
+        title: "What are the benefits of investing in metaverse platforms?",
+        content: `Experts claim that the metaverse has a trillion-dollar industry thus has a promising future. If you work in such a growing field, you will be noticed by others. Be a pioneer in the field!`,
+      },
+      {
+        title: "What can a metaverse development company do for you?",
+        content: `What can a metaverse development company do for you?`,
+      },
+    ],
+  };
+
+  const styles = {
+    titleTextColor: "blue",
+    rowTitleColor: "blue",
+  };
   return ( 
     <div id="home">
       <div className="hero">
@@ -51,16 +81,21 @@ const Home = () => {
 <ProvideCount/>
 <WhyUs/>
 <Services  type="one"/>
-      {/* <VisionSection type="one"  /> */}
-      {/* <AboutSection type="one" /> */}
       <ChainUpSection  type="one"/>
-      {/* <PricingSection data={pricingData} type="one" /> */}
-
-      <ImageSection />
-      <EngageSection />
-      {/* <VideoIntroSection type="one" /> */}
-      <FaqSection type="one" />
-      <ReviewSection type="one" />
+      <SongFly/>
+      <Recognized/>
+      <MarketingAgenchy/>
+      <LinkedinSales/>
+      {/* <FaqSection type="one" /> */}
+      <section id="faq">
+			<div className="container">
+				<h1 className="heading">Frequently Asked Questions</h1>
+        <div className="content">
+                <Faq data={data} styles={styles} />
+              </div>
+			</div>
+		</section>
+      {/* <ReviewSection type="one" /> */}
     </div>
   );
 };

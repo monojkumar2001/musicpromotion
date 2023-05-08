@@ -25,7 +25,7 @@
                         margin-bottom: 20px;
                     }
                     h1.banner-title {
-                        color: #393939;
+                        color: #000000;
                         font-size: clamp(35px, 6vw, 70px);
                         font-weight: 800;
                         line-height: 90px;
@@ -107,9 +107,9 @@ color:#fff;
     padding: 100px 0 100px 0;
 }
 .section-title {
-    color: #393939;
+    color: #000000;
     font-size: clamp(25px, 4vw, 40px);
-    font-weight: 800;
+    font-weight: 900;
     line-height: 60px;
     margin-bottom: 20px;
 }
@@ -201,4 +201,156 @@ padding: 10px 30px;
 .services-card:hover .learn-more-btn{
     background: #fff;
     color: #1DB954;
+}
+
+// ==================== songFly =============
+
+.songFly-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.songfly-list-item .songfly-list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.songfly-squre{
+    background: #1DB954;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.songFly-right img{
+    width: 100%;
+}
+.get-started-btn{
+    margin-top: 30px;
+    background: #1DB954;
+border-radius: 8px;
+padding: 15px 30px;
+font-size: 20px;
+font-weight: 600;
+color: #fff;
+}
+
+// ======================== Recognized ======================
+.recognized{
+    padding:100px 0 100px 0;
+}
+.recognized-wrapper{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 40px;
+    align-items: center;
+}
+.recognized-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+.recognized-icon-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recognized-icon-item img{
+    width: 70%;
+    margin: auto;
+}
+
+// ================ Marketing Agenchy ================
+.agenchy-img{
+    margin-top: 80px;
+}
+
+// ================ Linkedin Sales  ================
+.linkedin-sales-wrapper{
+margin-top: 100px;
+}
+.slider-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+.swiper-pagination-bullet {
+    display: none !important;
+}
+.next, .prev {
+    color: var(--white-color);
+    background: #1DB954;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+    box-shadow: 0px 10px 14px 4px rgba(108, 84, 234, 0.2);
+}
+.linkedin-sales-card{
+    position: relative;
+    background: #F5F5F5;
+border-radius: 20px;
+padding: 80px 30px 30px 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 450px;
+gap: 20px;
+}
+.linkedin-sales-profile{
+    position: absolute;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.linkedin-sales-profile img{
+    border-radius: 50%;
+    width: 100%;
+}
+.linkedin-sales-arrow-img{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:#1DB954;
+}
+.linkedin-sales-card h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.linkedin-sales-wrapper .swiper-container {
+    height: 520px;
+    padding:50px 10px ;
+}
+.linkedin-sales-star{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+// ================ Faq Section ============
+
+.heading {
+    font-size: clamp(30px, 7vw, 60px);
+    line-height: 1.7;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
 }
