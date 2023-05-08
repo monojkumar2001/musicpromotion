@@ -7,9 +7,28 @@
 .section-image {
     width: 1440px;
     max-width: 100%;
-    margin: 40px auto;
+    padding: 100px 0 40px 0 ;
+    margin: auto;
 }
-
+.section-img-content-warpper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.section-img-content-warpper .sign-up-btn-all{
+    background: #1DB954;
+border-radius: 10px;
+padding: 20px 30px;
+color: #fff;
+font-weight: 600;
+font-size: 20px;
+margin-top: 20px;
+}
 .engage-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +37,6 @@
         width: 1240px;
         max-width: 95%;
         text-align: center;
-        font-size: clamp(16px, 3vw, 20px);
         margin-bottom: 32px;
     }
 }

@@ -1,17 +1,13 @@
 #vision {
-    padding: 60px 0;
+    padding: 100px 0 0 0;
     .container {
         .vision-wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            align-items: center;
         }
         .vision-right img {
             width: 100%;
-        }
-        .sec-s-title {
-            font-size: clamp(16px, 3vw, 24px);
-            font-weight: 600;
-            margin-bottom: 20px;
         }
         h2.vision-title {
             font-size: clamp(30px, 3vw, 60px);
@@ -41,7 +37,7 @@
         background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, #ccfae4 100%);
     }
     &.type-two {
-        background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, rgba(255, 132, 53, 0.29) 100%);
+      
     }
     &.type-three {
         background: linear-gradient( 180deg, rgba(196, 196, 196, 0) 0%, #ffe3ba 100%);

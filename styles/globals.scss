@@ -24,13 +24,13 @@
 // }
 
 .page-1 {
-    padding: 96px 0 50px 0;
-    background: linear-gradient(0deg, rgba(196, 196, 196, 0) 0%, #ccfae4 100%);
+    padding: 150px 0 200px 0;
+    background: rgba(29, 185, 84, 0.06);
     .banner-wrapper {
+        
         width: 1440px;
         max-width: 95%;
         margin: auto;
-        min-height: 768px;
         display: flex;
         align-items: center;
         .banner-inner {
@@ -51,19 +51,16 @@
                 }
                 h1.banner-title {
                     color: #393939;
-                    // font-size: clamp(60px, 0vw, 80px);
-                    // font-weight: 800;
-                    // line-height: 70px;
-                    font-size: clamp(50px, 10vw, 100px);
+                    font-size: clamp(30px, 7vw, 70px);
                     font-weight: 800;
-                    line-height: 1.1;
+                    line-height: 1.4;
                     .focus {
                         color: #1db954;
                     }
                 }
                 .banner-des {
-                    margin-bottom: 30px;
-                    font-size: 18px;
+                    margin-bottom: 40px;
+                    font-size: 16px;
                     line-height: 30px;
                 }
                 a.custom-btn {
@@ -75,6 +72,7 @@
                     transition: 0.3s;
                     font-size: 18px;
                     font-weight: 600;
+                    margin-top: 30px;
                     &:hover {
                         background: #2fd168;
                     }

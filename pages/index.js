@@ -23,6 +23,8 @@ import MarketingAgenchy from "@components/sections/MarketingAgenchy";
 import LinkedinSales from "@components/sections/LinkedinSales";
 
 import Faq from "react-faq-component";
+import ContactUs from "@components/sections/ContactUs";
+import Registration from "@components/sections/Registration";
 // Images
 
 const Home = () => {
@@ -51,7 +53,7 @@ const Home = () => {
     titleTextColor: "blue",
     rowTitleColor: "blue",
   };
-  return ( 
+  return (
     <div id="home">
       <div className="hero">
         <div className="banner-wrapper">
@@ -60,14 +62,16 @@ const Home = () => {
               <div className="banner-content">
                 <p className="sm-title">Organic & Genre</p>
                 <h1 className="banner-title">
-                Your One-step E-Commerce Branding 
+                  Your One-step E-Commerce Branding
                 </h1>
                 <p className="banner-des">
-                Get your songs heard by thousands of music lovers. Grow your fanbase. Get featured in hot celebrity curator playlists and skyrocket your Spotify channel popularity.
+                  Get your songs heard by thousands of music lovers. Grow your
+                  fanbase. Get featured in hot celebrity curator playlists and
+                  skyrocket your Spotify channel popularity.
                 </p>
-           <Link href='/'>
-            <button className="custom-btn"> GET STARTED</button>
-           </Link>
+                <Link href="/">
+                  <button className="custom-btn"> GET STARTED</button>
+                </Link>
               </div>
             </div>
             <div className="col">
@@ -78,24 +82,29 @@ const Home = () => {
           </div>
         </div>
       </div>
-<ProvideCount/>
-<WhyUs/>
-<Services  type="one"/>
-      <ChainUpSection  type="one"/>
-      <SongFly/>
-      <Recognized/>
-      <MarketingAgenchy/>
-      <LinkedinSales/>
-      {/* <FaqSection type="one" /> */}
+      <ProvideCount />
+      <WhyUs />
+      <Services type="one" />
+      <ChainUpSection type="one" />
+      <SongFly />
+      <Recognized />
+      <MarketingAgenchy />
+      <LinkedinSales />
+      {/*  ========= Faq Section start ======== */}
       <section id="faq">
-			<div className="container">
-				<h1 className="heading">Frequently Asked Questions</h1>
-        <div className="content">
-                <Faq data={data} styles={styles} />
-              </div>
-			</div>
-		</section>
-      {/* <ReviewSection type="one" /> */}
+        <div className="container">
+          <h1 className="heading">Frequently Asked Questions</h1>
+          <div className="content">
+            <Faq data={data} styles={styles} />
+          </div>
+        </div>
+      </section>
+      {/*  ========= Faq Section End ======== */}
+
+      {/* ===========  Contact Us start ================== */}
+      <ContactUs/>
+      {/* ===========  Contact Us End ================== */}
+      <Registration/>
     </div>
   );
 };
@@ -105,56 +114,56 @@ Home.layout = AppLayout;
 
 export default Home;
 
-const pricingData = [
-  {
-    package_type: "basic",
-    cur_price: "69",
-    off_price: "139 ",
-    percent: "50",
-    includes: [
-      "Reach 10k Audience Base",
-      "Distribution To 100 Curators",
-      "Distribution To 100 Playlists",
-      "Distribution To 100 Radios",
-      "Unlimited Revisions",
-      "Start Within 24 hours",
-      "2-3 Days Delivery",
-    ],
-    details:
-      "Engagement may vary.*Typical engagements on average 5,000 streams and 700 followers organically",
-  },
-  {
-    package_type: "Standard",
-    cur_price: "119",
-    off_price: "239",
-    percent: "50",
-    includes: [
-      "Reach 30k Audience Base",
-      "Distribution To 250 Curators",
-      "Distribution To 250 Playlists",
-      "Distribution To 250 Radios",
-      "Unlimited Revisions",
-      "Start Within 24 hours",
-      "3-5 Days Delivery",
-    ],
-    details:
-      "Engagement may vary.*Typical engagements on average 15,000 streams and 1800 followers organically",
-  },
-  {
-    package_type: "premium",
-    cur_price: "299",
-    off_price: "499",
-    percent: "50",
-    includes: [
-      "Reach 100k Audience Base",
-      "Distribution To 550 Curators",
-      "Distribution To 550 Playlists",
-      "Distribution To 550 Radios",
-      "Unlimited Revisions",
-      "Start Within 24 hours",
-      "9-10 Days Delivery",
-    ],
-    details:
-      "Engagement may vary.*Typical engagements on average 50,000 streams and 10000 followers organically",
-  },
-];
+// const pricingData = [
+//   {
+//     package_type: "basic",
+//     cur_price: "69",
+//     off_price: "139 ",
+//     percent: "50",
+//     includes: [
+//       "Reach 10k Audience Base",
+//       "Distribution To 100 Curators",
+//       "Distribution To 100 Playlists",
+//       "Distribution To 100 Radios",
+//       "Unlimited Revisions",
+//       "Start Within 24 hours",
+//       "2-3 Days Delivery",
+//     ],
+//     details:
+//       "Engagement may vary.*Typical engagements on average 5,000 streams and 700 followers organically",
+//   },
+//   {
+//     package_type: "Standard",
+//     cur_price: "119",
+//     off_price: "239",
+//     percent: "50",
+//     includes: [
+//       "Reach 30k Audience Base",
+//       "Distribution To 250 Curators",
+//       "Distribution To 250 Playlists",
+//       "Distribution To 250 Radios",
+//       "Unlimited Revisions",
+//       "Start Within 24 hours",
+//       "3-5 Days Delivery",
+//     ],
+//     details:
+//       "Engagement may vary.*Typical engagements on average 15,000 streams and 1800 followers organically",
+//   },
+//   {
+//     package_type: "premium",
+//     cur_price: "299",
+//     off_price: "499",
+//     percent: "50",
+//     includes: [
+//       "Reach 100k Audience Base",
+//       "Distribution To 550 Curators",
+//       "Distribution To 550 Playlists",
+//       "Distribution To 550 Radios",
+//       "Unlimited Revisions",
+//       "Start Within 24 hours",
+//       "9-10 Days Delivery",
+//     ],
+//     details:
+//       "Engagement may vary.*Typical engagements on average 50,000 streams and 10000 followers organically",
+//   },
+// ];

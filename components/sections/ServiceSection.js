@@ -11,16 +11,15 @@ const ServiceSection = ({ data, type = "one" }) => {
               </h2>
 
               <p className="sec-des">
-              Built For From Music Artist To Record Labels Get All Your Music
-                <br />Marketing Needs In One Place.
+              Built For From Music Artist To Record Labels Get All Your Music Marketing Needs In One Place.
               </p>
             </div>
           </div>
 
           <div className="service-wrapper mt-3">
             <div className="service-card">
-              <div className="service-icon">
-                <img src="/assets/img/icon/1.png" alt="" />
+              <div className="service-agency-img">
+              <img src="/assets/home-2/img/agenchy-img-1.svg" alt="" />
               </div>
               <div className="service-details">
                 <h4>Targeted Campaigns</h4>
@@ -30,27 +29,25 @@ const ServiceSection = ({ data, type = "one" }) => {
                 </p>
               </div>
             </div>
-            <div className="service-card">
-              <div className="service-icon">
-                <img src="/assets/img/icon/2.png" alt="" />
+            <div className="service-card service-card-middle">
+              <div className="service-agency-img">
+              <img src="/assets/home-2/img/agenchy-img-2.svg" alt="" />
               </div>
               <div className="service-details">
                 <h4>Earn Royalties</h4>
                 <p>
-                  We only run real! campaigns to attract real people, so you
-                  continue to earn royalties for streams.
+                We only run real campaigns to attract real people, so you continue to earn royalties for streams.
                 </p>
               </div>
             </div>
             <div className="service-card">
-              <div className="service-icon">
-                <img src="/assets/img/icon/3.png" alt="" />
+              <div className="service-agency-img">
+              <img src="/assets/home-2/img/agenchy-img-3.svg" alt="" />
               </div>
               <div className="service-details">
                 <h4>Scalable Solutions</h4>
                 <p>
-                  We have plans for the starting artist, for big agencies and
-                  all in between.
+                We have plans for the starting artist for big agencies and all in between.
                 </p>
               </div>
             </div>

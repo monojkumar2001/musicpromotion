@@ -4,7 +4,6 @@ const VisionSection = ({ type = "" }) => {
 			<div className="container">
 				<div className="vision-wrapper">
 					<div className="vision-left">
-						<p className="focus sec-s-title">Our Vision</p>
 						<h2 className="vision-title">We are here to grow your channel</h2>
 
 						<p className="vision-des">
@@ -16,7 +15,7 @@ const VisionSection = ({ type = "" }) => {
 					</div>
 
 					<div className="vision-right">
-						<img src="/assets/img/4.png" alt="" />
+						<img src="/assets/img/4.svg" alt="" />
 					</div>
 				</div>
 			</div>

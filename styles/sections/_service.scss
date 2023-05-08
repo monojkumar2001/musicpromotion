@@ -1,5 +1,5 @@
 #service {
-    padding: 80px 0 0 0;
+    padding: 100px 0 0 0;
     position: relative;
     overflow: hidden;
     &::before {
@@ -48,40 +48,39 @@
         .service-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 70px;
+            margin-top: 80px;
             .service-card {
-                text-align: center;
-                border: 1px solid #f1f1f1;
+                background: #1DB954;
+border: 1px solid #F1F1F1;
                 padding: 45px 20px;
                 transition: 0.3s;
-                margin: 15px;
                 cursor: pointer;
-                background-color: #ffffff;
-                .service-icon {
-                    width: 75px;
-                    height: 75px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    margin: auto;
-                    padding: 10px;
-                    img {
-                        width: 40px;
-                    }
+                width: 100%;
+                position: relative;
+                color: #fff;
+                .service-agency-img{
+                    position: absolute;
+                    left: -50px;
+                    bottom: -10px;
                 }
                 .service-details {
                     margin-top: 20px;
+                    margin-left: 200px;
                 }
                 .service-details h4 {
-                    font-size: 22px;
+                    font-size: 18px;
                     margin-bottom: 15px;
-                    color: #222222;
-                    font-weight: 500;
+                    color: #fff;
+                    font-weight: 700;
                 }
                 &:hover {
                     box-shadow: 0px 0px 13px 1px #eae8f4;
                     border-color: #fff;
                 }
+            }
+            .service-card-middle{
+                background: #00B1E7;
             }
             @media screen and (max-width: 1080px) {
                 grid-template-columns: 1fr;
@@ -101,7 +100,7 @@
 
 .type-two .container {
     .title-wrapper p.sec-sm-title {
-        color: #ff8435;
+        color: #1db954;
     }
     .service-wrapper .service-card .service-icon {
         border: 1px solid #ff8435;

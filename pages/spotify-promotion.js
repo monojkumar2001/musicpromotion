@@ -9,12 +9,13 @@ import VideoIntroSection from "@components/sections/VideoIntroSection";
 import PricingSection from "@components/sections/PricingSection";
 import ImageSection from "@components/sections/ImageSection";
 import EngageSection from "@components/sections/EngageSection";
+import HowItWork from "@components/sections/HowItWork";
 
 // Images
 
 const Page1 = () => {
   return (
-
+<>
         <div className="page-1">
         <div className="banner-wrapper">
           <div className="banner-inner">
@@ -92,24 +93,26 @@ const Page1 = () => {
           </div>
         </div>
 
-
+        </div>
       <ServiceSection type="two" />
       <VisionSection  type="two"/>
       <AboutSection type="two" />
       <PricingSection data={pricingData} type="two" />
       <ImageSection />
       <EngageSection />
-      <FaqSectionSoundCloud type="two"  />
-      <ReviewSection type="two" />
-      </div>
+      <HowItWork/>
+      {/* <FaqSectionSoundCloud type="two"  /> */}
+      {/* <ReviewSection type="two" /> */}
+      </>
   );
 };
 
 const pricingData = [
   {
     package_type: "basic",
+    package_dis:"Crafted for high touch sales teams",
     cur_price: "69",
-    off_price: "139 ",
+    package_lead: "2000",
     percent: "50",
     includes: [
       "Reach 10k Audience Base",
@@ -125,8 +128,9 @@ const pricingData = [
   },
   {
     package_type: "Standard",
+    package_dis:"Crafted for high touch sales teams",
     cur_price: "119",
-    off_price: "239",
+    package_lead : "2000",
     percent: "50",
     includes: [
       "Reach 30k Audience Base",
@@ -142,8 +146,9 @@ const pricingData = [
   },
   {
     package_type: "premium",
+    package_dis:"Crafted for high touch sales teams",
     cur_price: "299",
-    off_price: "499",
+    package_lead: "2000",
     percent: "50",
     includes: [
       "Reach 100k Audience Base",
